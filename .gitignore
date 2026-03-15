@@ -1,0 +1,6 @@
+sessions/
+session-map.json
+*.env
+.env*
+__pycache__/
+*.pyc
