@@ -12,7 +12,7 @@ const projectsDir  = path.join(os.homedir(), '.claude', 'projects');
 const STALE_MS     = 2 * 60 * 60 * 1000;
 
 // Decode Claude's encoded project dir name to a real path
-// e.g. "C--Users-ibrah-CascadeProjects-postwriter" -> "C:\Users\ibrah\CascadeProjects\postwriter"
+// e.g. "C--Users-you-CascadeProjects-postwriter" -> "C:\Users\you\CascadeProjects\postwriter"
 function decodeDirName(dirName) {
   // Replace first -- with :\ then remaining - with \
   return dirName.replace('--', ':\\').replace(/-/g, '\\');
